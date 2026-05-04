@@ -6,7 +6,7 @@ from pydantic import BaseModel, Field
 from typing import List
 import os 
 
-DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://cloud24a:{password}@cloud-24-adb.postgres.database.azure.com:5432/queries")
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://amitcloud:Nepal12345@class-amit-db.postgres.database.azure.com:5432/postgres")
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(bind=engine)
 Base = declarative_base()
